@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Trusted Companion for Safe & Peaceful Journeys</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Header */
+header{
+    padding:60px 20px;
+    text-align:center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header h1{
+    font-size:32px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:15px;
+    opacity:0.8;
+}
+
+/* Section */
+section{
+    padding:40px 20px;
+}
+
+/* About */
+.about p {
+    margin-bottom: 18px;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+
+/* Pricing Behavior Card */
+.pricing{
+    margin-top:30px;
+    background: rgba(255,255,255,0.05);
+    padding:25px;
+    border-radius:15px;
+    backdrop-filter: blur(10px);
+    box-shadow:0 8px 30px rgba(0,0,0,0.5);
+    transition: transform 0.4s ease;
+}
+
+.pricing:hover{
+    transform: scale(1.05);
+}
+
+.pricing h3{
+    margin-bottom:15px;
+    font-weight:600;
+}
+
+/* Video */
+.video-section video{
+    width:100%;
+    border-radius:15px;
+    margin-top:15px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.6);
+    transition: transform 0.5s ease;
+}
+
+.video-section video:hover{
+    transform: scale(1.03);
+}
+
+/* Vertical Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Premium hover effect */
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+
+/* Contact */
+.contact{
+    background: rgba(255,255,255,0.05);
+    padding:25px;
+    border-radius:15px;
+    backdrop-filter: blur(10px);
+    text-align:center;
+}
+
+.contact a{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:#00c6ff;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition: all 0.4s ease;
+}
+
+.contact a:hover{
+    background:#0072ff;
+    color:white;
+    transform:scale(1.05);
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    font-size:13px;
+    opacity:0.6;
+}
+
+/* Animations */
+@keyframes fadeIn{
+    from{opacity:0}
+    to{opacity:1}
+}
+
+@keyframes slideUp{
+    from{transform:translateY(40px);opacity:0}
+    to{transform:translateY(0);opacity:1}
+}
+
+/* Desktop View */
+@media(min-width:768px){
+    header h1{
+        font-size:48px;
+    }
+
+    .gallery{
+        width:60%;
+        margin:auto;
+    }
+
+    .video-section{
+        width:70%;
+        margin:auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>MANTHIRA MOORTHY</h1>
+    <p>Professional Acting Car Driver | Acting Driver Arrangement</p>
+</header>
+
+<section class="about">
+    <p>
+        I provide respectful, safe, and reliable acting car driver services 
+        specially suited for temple visits and tourist journeys.
+    </p>
+
+    <p>
+        Whether you are travelling with family for a spiritual trip or planning 
+        a comfortable sightseeing experience, I ensure a calm, patient, and 
+        worry-free ride from start to finish.
+    </p>
+
+    <p>
+        I understand the importance of punctuality for temple timings and the 
+        need for comfort during long-distance travel. Every trip is handled 
+        with care, responsibility, and dedication to your safety.
+    </p>
+
+    <p>
+        My charges are transparently structured based on vehicle type, travel 
+        distance, and day or night service — so you always receive fair and 
+        honest pricing without confusion.
+    </p>
+
+    <p>
+        Your journey is not just a trip — it is an experience. I am committed 
+        to making it smooth, peaceful, and memorable.
+    </p>
+</section>
+
+<section class="video-section">
+    <h2>Driving Showcase</h2>
+
+    <video id="scrollVideo"
+        muted
+        playsinline
+        webkit-playsinline
+        preload="auto"
+        style="width:100%; border-radius:15px;">
+        
+        <source src="vid1.mp4" type="video/mp4">
+    </video>
+</section>
+
+
+
+<section>
+    <h2 style="text-align:center;">My Trips</h2>
+    <div class="gallery">
+        <img src="img1.jpg" alt="Trip 1">
+        <img src="img2.jpg" alt="Trip 2">
+        <img src="img3.jpg" alt="Trip 3">
+        <img src="img4.jpg" alt="Trip 4">
+        <img src="img5.jpg" alt="Trip 5">
+    </div>
+</section>
+
+<section class="about">
+    <div class="pricing">
+        <h3>Our Services</h3>
+        <p>✔ Skilled and professional drivers for Luxury, Sedan, Hatchback, SUV, and MPV vehicles</p>
+        <p>✔ Flexible service plans – Hourly, Full-Day, Monthly, and Outstation assignments</p>
+        <p>✔ Extended availability for long waiting hours and special requirements</p>
+        <p>✔ Dedicated services for Temple trips, Tourist travel, and Safe Night driving</p>   
+    </div>
+</section>
+
+<section>
+    <div class="contact">
+        <h2>Contact Me</h2>
+        <p>Available 24/7 for bookings</p>
+        <p>📞 +91 9962798855</p>
+        <p>📧 yourmail@email.com</p>
+        <a href="tel:+919962798855">Call Now</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Selvaraj D | Acting Call Driver
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    
+        const video = document.getElementById("scrollVideo");
+    
+        // Force mute (extra safety for autoplay policy)
+        video.muted = true;
+    
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    video.play().catch(error => {
+                        console.log("Autoplay prevented:", error);
+                    });
+                } else {
+                    video.pause();
+                }
+            });
+        }, {
+            threshold: 0.3   // lower threshold = easier to trigger
+        });
+    
+        observer.observe(video);
+    });
+    </script>
+    
+    
+
+</body>
+</html>
