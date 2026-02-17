@@ -172,6 +172,30 @@ footer{
         margin:auto;
     }
 }
+
+.profile-container {
+    text-align: center;
+}
+
+.profile-img-wrapper {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    overflow: hidden;        /* This keeps image inside circle */
+    border: 4px solid #00c6ff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.profile-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       /* This fixes image position */
+    object-position: center; /* Keeps face centered */
+    display: block;
+}
+
+
 </style>
 </head>
 
@@ -181,6 +205,14 @@ footer{
     <h1>MANTHIRA MOORTHY</h1>
     <p>Professional Acting Car Driver | Acting Driver Arrangement</p>
 </header>
+
+<div class="profile-container">
+    <div class="profile-img-wrapper">
+        <img src="profile.png" alt="Selvaraj - Acting Call Driver">
+    </div>
+</div>
+
+
 
 <section class="about">
     <p>
@@ -213,7 +245,7 @@ footer{
 </section>
 
 <section class="video-section">
-    <h2>Gallery</h2>
+    <h2>Driving Showcase</h2>
 
     <video id="scrollVideo"
         muted
@@ -229,7 +261,7 @@ footer{
 
 
 <section>
-    <h2 style="text-align:center;">Trips</h2>
+    <h2 style="text-align:center;">My Trips</h2>
     <div class="gallery">
         <img src="img1.jpg" alt="Trip 1">
         <img src="img2.jpg" alt="Trip 2">
@@ -260,7 +292,7 @@ footer{
 </section>
 
 <footer>
-    © 2026 Selvaraj D | Software Developer
+    © 2026 Selvaraj D | Software Developer 
 </footer>
 
 <script>
@@ -293,5 +325,3 @@ footer{
 
 </body>
 </html>
-
-
